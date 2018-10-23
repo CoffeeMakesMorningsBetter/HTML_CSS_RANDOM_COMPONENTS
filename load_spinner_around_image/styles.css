@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.parent {
+  position: relative;
+  border-radius: 50%;
+  background: url("http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg");
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.parent-child {
+  position: absolute;
+  border: 10px solid;
+  border-color: pink transparent;
+  width: 105%;
+  height: 105%;
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+  top: -7.5%;
+  left: -7.5%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
