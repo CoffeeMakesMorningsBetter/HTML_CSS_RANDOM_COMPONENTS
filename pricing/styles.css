@@ -1,0 +1,111 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+body {
+  background: rgb(2, 16, 76);
+}
+
+h1 {
+  vertical-align: center;
+  padding-top: 10px;
+}
+
+.container {
+  background: white;
+  border-radius: 5px;
+  max-width: 1080px;
+  max-height: 80vh;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 5px rgb(200, 200, 200);
+}
+
+.widget-container {
+  display: flex;
+  max-height: 90vh;
+}
+
+.widget-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid grey;
+  border-left: 0.5px solid grey;
+  width: 100%;
+  max-height: 100%;
+}
+
+.widget-item:last-of-type {
+  border-bottom-right-radius: 5px;
+}
+
+.widget-item:first-of-type {
+  border-bottom-left-radius: 5px;
+  border-left: none;
+}
+
+.widget-item:first-of-type button {
+  color: rgb(80, 153, 234);
+  background: white;
+}
+
+.widget-item h1 {
+  color: rgb(80, 153, 234);
+  margin: 4rem 0;
+}
+
+.widget-item-transform-top, .widget-item-transform-bottom {
+  line-height: 0%;
+}
+
+.widget-item-transform-top {
+  margin-bottom: 2rem;
+}
+
+.widget-item-transform-bottom {
+  margin-bottom: 4rem;
+}
+
+.widget-item button {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5rem 0 3rem 0;
+  background: rgb(80, 153, 234);
+  color: white;
+  font-size: 1rem;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+button:focus {
+  outline:0;
+}
+
+.hover {
+  opacity: 0;
+  color: rgb(80, 153, 234);
+  font-weight: 700;
+  display: none;
+}
+
+.widget-item:hover .widget-item-transform-top,
+.widget-item:hover .widget-item-transform-bottom {
+  display: none;
+}
+
+.widget-item:hover .hover {
+  opacity: 1;
+  margin: 55px 0;
+  display: block;
+  transition: all 1s;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+
+
+
+
