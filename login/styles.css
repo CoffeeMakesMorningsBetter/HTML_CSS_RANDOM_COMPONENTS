@@ -1,0 +1,77 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 350px;
+  height: 275px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  margin: 100px 0;
+  padding: 10px 0;
+}
+
+.container > div > h1 {
+  font-family: "Oleo Script", cursive;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 22px auto 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #828282;
+}
+
+form input[type="text"] {
+  margin: 0 40px 6px;
+  padding: 0 9px;
+  height: 36px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid #efefef;
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: start;
+}
+
+form input[type="text"]:hover, form input[type="submit"] {
+  cursor: pointer;
+}
+
+form input[type="submit"] {
+  margin: 8px 40px;
+  background-color: #3897f0;
+  color: white;
+  height: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.container a {
+  color: #003569;
+  text-decoration: none;
+  margin: 12px 0;
+  text-align: center;
+  font-size: 12px;
+  font: sans-serif;
+}
